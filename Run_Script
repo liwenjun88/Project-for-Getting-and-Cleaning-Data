@@ -60,7 +60,7 @@ Alldata <- merge(test,train,all=TRUE)
 
 #Reshape Alldata to make all testing values in one column for future data analysis.
 library(reshape)
-mAlldata <- melt(Alldata, id=c("V0"))
+mAlldata <- melt(Alldata, id=c("V0","VS"))
 finalAlldata <- mAlldata[order(mAlldata$V0),]
 
 #Uses descriptive activity names to name the activities in the data set
