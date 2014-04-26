@@ -1,0 +1,60 @@
+
+y_test <- read.table("~/Downloads/UCI HAR Dataset/test/y_test.txt", header=FALSE, sep="")
+X_test <- read.table("~/Downloads/UCI HAR Dataset/test/X_test.txt", header=FALSE, sep="")
+names(y_test) <- c("V0")
+test <- append(y_test, X_test)
+
+y_train <- read.table("~/Downloads/UCI HAR Dataset/train/y_train.txt", header=FALSE, sep="")
+X_train <- read.table("~/Downloads/UCI HAR Dataset/train/X_train.txt", header=FALSE, sep="")
+names(y_train) <- c("V0")
+train <- append(y_train, X_train)
+
+Alldata <- merge(test,train,all=TRUE)
+
+library(reshape)
+mAlldata <- melt(Alldata, id=c("V0"))
+finalAlldata <- mAlldata[order(mAlldata$V0),]
+
+finalAlldata$V0[finalAlldata$V0 == 1] = 'WALKING'
+finalAlldata$V0[finalAlldata$V0 == 2] = 'WALKING_UPSTAIRS'
+finalAlldata$V0[finalAlldata$V0 == 3] = 'WALKING_DOWNSTAIRS'
+finalAlldata$V0[finalAlldata$V0 == 4] = 'SITTING'
+finalAlldata$V0[finalAlldata$V0 == 5] = 'STANDING'
+finalAlldata$V0[finalAlldata$V0 == 6] = ‘LAYING'
+
+tapply(finalAlldata$value, finalAlldata$V0, mean)
+tapply(finalAlldata$value, finalAlldata$V0, sd)
+
+y_test <- read.table("~/Downloads/UCI HAR Dataset/test/y_test.txt", header=FALSE, sep="")
+X_test <- read.table("~/Downloads/UCI HAR Dataset/test/X_test.txt", header=FALSE, sep=“")
+subject_test <- read.table("~/Downloads/UCI HAR Dataset/test/subject_test.txt", header=FALSE, sep=“")
+names(y_test) <- c("V0”)
+names(subject_test) <- c("VS”)
+temp_test <- append(subject_test, X_test)
+test <- append(y_test, temp_test)
+
+y_train<- read.table("~/Downloads/UCI HAR Dataset/train/y_train.txt", header=FALSE, sep="")
+X_train <- read.table("~/Downloads/UCI HAR Dataset/train/X_train.txt", header=FALSE, sep=“")
+subject_train <- read.table("~/Downloads/UCI HAR Dataset/train/subject_train.txt", header=FALSE, sep=“")
+names(y_train) <- c("V0”)
+names(subject_train) <- c("VS”)
+temp_train <- append(subject_train, X_train)
+train <- append(y_train, temp_train)
+
+Alldata <- merge(test,train,all=TRUE)
+
+
+library(reshape)
+mAlldata <- melt(Alldata, id=c("V0"))
+finalAlldata <- mAlldata[order(mAlldata$V0),]
+
+
+finalAlldata$V0[finalAlldata$V0 == 1] = 'WALKING'
+finalAlldata$V0[finalAlldata$V0 == 2] = 'WALKING_UPSTAIRS'
+finalAlldata$V0[finalAlldata$V0 == 3] = 'WALKING_DOWNSTAIRS'
+finalAlldata$V0[finalAlldata$V0 == 4] = 'SITTING'
+finalAlldata$V0[finalAlldata$V0 == 5] = 'STANDING'
+finalAlldata$V0[finalAlldata$V0 == 6] = ‘LAYING'
+
+tapply(finalAlldata$value, list(finalAlldata$V0,finalAlldata$VS), mean)
+
