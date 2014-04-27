@@ -1,22 +1,22 @@
 Variables and data:
 
-V0    Measurement
-   'WALKING'
-   'WALKING_UPSTAIRS'
-   'WALKING_DOWNSTAIRS'
-   'SITTING'
-   'STANDING'
-   ‘LAYING'
+V0    Measurement<br>
+   'WALKING'<br>
+   'WALKING_UPSTAIRS'<br>
+   'WALKING_DOWNSTAIRS'<br>
+   'SITTING'<br>
+   'STANDING'<br>
+   ‘LAYING'<br>
    
-VS    Identifier of Subject
-   1
-   2
-   .
-   .
-   30
+VS    Identifier of Subject<br>
+   1<br>
+   2<br>
+   .<br>
+   .<br>
+   30<br>
    
-value    Test data record
-   Range from -1 to 1
+value    Test data record<br>
+   Range from -1 to 1<br>
    
    
 Transformations:
