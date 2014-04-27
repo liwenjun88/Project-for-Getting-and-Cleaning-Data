@@ -20,7 +20,13 @@ value    Test data record
    
    
 Transformations:
-1. X_test (append to) y_test -> test. X_train (append to) y_train -> train. 
+1. X_test and y_test (append to) -> test. X_train and y_train (append to)-> train. 
 2. test and train (merge) -> Alldata
 3. Alldata (reshape) -> mAlldata
-4. mAlldata
+4. mAlldata (order) ->finalAlldata
+5. finalAlldata (tapply) -> Mean and Sd
+6. X_test, y_test and subject_test (append to) -> test. X_train, y_train and subject_train (append to)-> train.
+7. test and train (merge) -> Alldata
+8. Alldata (reshape) -> mAlldata
+9. mAlldata (order) ->finalAlldata
+10. finalAlldata (tapply) -> Mean for each subject and each measurement
