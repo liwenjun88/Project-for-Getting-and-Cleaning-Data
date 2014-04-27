@@ -19,7 +19,7 @@ How my script works:<br>
 4. Use tapply() function to extract only the measurements on the mean and standard deviation for each measurement.<br>
 5. Use append() and Merge() functions to integrate the raw data (including subject data) into the second dataset.<br>
 6. Use library(reshape) and melt() function to make a tidy data set.<br>
-7. Rename all the numbers in VO column(measurement) to descriptive activity names.<br>
+7. Rename all the numbers in V0 column(measurement) to descriptive activity names.<br>
 8. Use tapply() function to extract the average of each variable for each activity and each subject. <br>
 
 =====================================
