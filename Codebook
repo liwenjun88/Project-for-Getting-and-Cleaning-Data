@@ -20,6 +20,7 @@ value    Test data record
    
    
 Transformations:
+
 1. X_test and y_test (append to) -> test. X_train and y_train (append to)-> train. 
 2. test and train (merge) -> Alldata
 3. Alldata (reshape) -> mAlldata
