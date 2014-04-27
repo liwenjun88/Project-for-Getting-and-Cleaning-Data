@@ -1,6 +1,6 @@
 Variables and data:
 
-V0    Measurement<br>
+V0  &nbsp;&nbsp;&nbsp;    Measurement<br>
    'WALKING'<br>
    'WALKING_UPSTAIRS'<br>
    'WALKING_DOWNSTAIRS'<br>
@@ -8,14 +8,14 @@ V0    Measurement<br>
    'STANDING'<br>
    ‘LAYING'<br>
    
-VS    Identifier of Subject<br>
+VS   &nbsp;&nbsp;&nbsp;   Identifier of Subject<br>
    1<br>
    2<br>
    .<br>
    .<br>
    30<br>
    
-value    Test data record<br>
+value   &nbsp;&nbsp;&nbsp;   Test data record<br>
    Range from -1 to 1<br>
    
    
