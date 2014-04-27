@@ -16,7 +16,7 @@ VS   &nbsp;&nbsp;&nbsp;   Identifier of Subject<br>
    30<br>
    
 value   &nbsp;&nbsp;&nbsp;   Test data record<br>
-   Range from -1 to 1<br>
+   Range from -1 to 1<br><br><br>
    
    
 Transformations:
