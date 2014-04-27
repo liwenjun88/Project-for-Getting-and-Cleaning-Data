@@ -15,7 +15,7 @@ Project requirement:<br>
 How my script works:<br>
 1. Use append() and Merge() functions to integrate the raw data into one dataset.<br>
 2. Use library(reshape) and melt() function to make a tidy data set.<br>
-3. Rename all the numbers in VO column(measurement) to descriptive activity names.<br>
+3. Rename all the numbers in V0 column(measurement) to descriptive activity names.<br>
 4. Use tapply() function to extract only the measurements on the mean and standard deviation for each measurement.<br>
 5. Use append() and Merge() functions to integrate the raw data (including subject data) into the second dataset.<br>
 6. Use library(reshape) and melt() function to make a tidy data set.<br>
