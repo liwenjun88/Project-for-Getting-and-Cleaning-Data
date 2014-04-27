@@ -26,8 +26,8 @@ Transformations:
 3. Alldata (reshape) -> mAlldata
 4. mAlldata (order) ->finalAlldata
 5. finalAlldata (tapply) -> Mean and Sd
-6. X_test, y_test and subject_test (append to) -> test. X_train, y_train and subject_train (append to)-> train.
-7. test and train (merge) -> Alldata
-8. Alldata (reshape) -> mAlldata
-9. mAlldata (order) ->finalAlldata
-10. finalAlldata (tapply) -> Mean for each subject and each measurement
+6. X_test, y_test and subject_test (append to) -> test_s. X_train, y_train and subject_train (append to)-> train_s.
+7. test_s and train_s (merge) -> Alldata_s
+8. Alldata_s (reshape) -> mAlldata_s
+9. mAlldata_s (order) ->finalAlldata_s
+10. finalAlldata_s (tapply) -> Mean for each subject and each measurement
