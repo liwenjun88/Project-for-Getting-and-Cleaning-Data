@@ -1,0 +1,26 @@
+Variables and data:
+
+V0    Measurement
+   'WALKING'
+   'WALKING_UPSTAIRS'
+   'WALKING_DOWNSTAIRS'
+   'SITTING'
+   'STANDING'
+   ‘LAYING'
+   
+VS    Identifier of Subject
+   1
+   2
+   .
+   .
+   30
+   
+value    Test data record
+   Range from -1 to 1
+   
+   
+Transformations:
+1. X_test (append to) y_test -> test. X_train (append to) y_train -> train. 
+2. test and train (merge) -> Alldata
+3. Alldata (reshape) -> mAlldata
+4. mAlldata
